@@ -1,3 +1,4 @@
+// 1. Importação das Imagens (Agora em WebP!)
 import corte01 from './assets/images/cortes/corte-01.webp';
 import corte02 from './assets/images/cortes/corte-02.webp';
 import corte03 from './assets/images/cortes/corte-03.webp';
@@ -8,19 +9,21 @@ import loja02 from './assets/images/interior/loja-02.webp';
 import loja03 from './assets/images/interior/loja-03.webp';
 import loja04 from './assets/images/interior/loja-04.webp';
 
+// 2. Informações do Negócio - BARBEARIA ZELO
 export const BUSINESS_INFO = {
   name: "Barbearia Zelo",
   barberName: "Sérgio",
   phone: '+351 911 081 781', 
   address: 'R. Carvalhal nº1',
   city: '4410-444 Arcozelo',
-  openingHours: 'Segunda a Sábado: 08:00 - 19:30', // Ajustei base 08h
-  // Como não tem link de agendamento específico, vamos usar o WhatsApp ou ligar
+  openingHours: 'Segunda a Sábado: 08:00 - 19:30',
   bookingUrl: 'https://wa.me/351911081781', 
-  googleMapsUrl: 'https://www.google.com/maps/place/Barbearia+Zelo/@41.0628,-8.645,17z',
-  instagramUrl: 'https://www.facebook.com/barbeariazelo' // Usando o Face fornecido
+  // LINK DO MAPA ATUALIZADO ABAIXO:
+  googleMapsUrl: 'https://maps.app.goo.gl/kqLaLyWrFaBnyocy6',
+  instagramUrl: 'https://www.facebook.com/barbeariazelo'
 };
 
+// 3. Serviços
 export const SERVICES = [
   { id: 1, name: 'Corte Zelo', description: 'Corte masculino com acabamento de excelência.', price: '12€' },
   { id: 2, name: 'Barba Tradicional', description: 'Aparo e contorno com o cuidado que você merece.', price: '8€' },
@@ -28,6 +31,7 @@ export const SERVICES = [
   { id: 4, name: 'Corte Infantil', description: 'Cuidado e paciência para os mais pequenos.', price: '10€' }
 ];
 
+// 4. Críticas
 export const REVIEWS = [
   {
     id: 1,
@@ -52,6 +56,7 @@ export const REVIEWS = [
   }
 ];
 
+// 5. Galeria
 export const IMAGES = {
   cortes: [
     { id: 1, url: corte01, alt: 'Corte Barbearia Zelo' },
